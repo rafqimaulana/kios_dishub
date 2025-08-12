@@ -18,6 +18,7 @@ use App\Http\Controllers\KeranjangController;
 use App\Http\Controllers\DashboardKostController;
 use App\Http\Controllers\AdminProvinsiController;
 use App\Http\Controllers\AdminSemuaPembayaran;
+use App\Http\Controllers\StatusController;
 use App\Http\Controllers\InfosController;
 use App\Http\Controllers\infosuserController;
 use App\Http\Controllers\KamarViewController;
@@ -164,6 +165,7 @@ Route::get('/dashboard/pembayaran/checkSlug', [pembayaranController::class, 'che
 
 Route::resource('/dashboard/pembayaran', pembayaranController::class)->middleware('auth');
 
+Route::get('/dashboard/status/', [StatusController::class, 'index']);
 Route::get('/dashboard/semuapembayaran/checkSlug', [AdminSemuaPembayaran::class, 'checkSlug'])->middleware('admin');
 
 Route::resource('/dashboard/semuapembayaran', AdminSemuaPembayaran::class)->middleware('admin');

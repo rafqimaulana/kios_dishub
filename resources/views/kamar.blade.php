@@ -11,7 +11,7 @@
                         </a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        <a href="/posts" class="text-decoration-none" style="color: #048853; font-weight: 700;"> Semua Kos
+                        <a href="/posts" class="text-decoration-none" style="color: #048853; font-weight: 700;"> Semua Kios
                         </a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
@@ -169,13 +169,13 @@
                 <div class="row col-12 col-lg-12 col-md-12 pemilik__kos">
                     <div class="col-6 col-lg-6 col-md-6">
                         <h6 class="text-justify">
-                            Kos disewakan oleh
+                            Kios disewakan oleh
                             <a href="/posts?author={{ $kamar->post->author->username }}"
                                 class="text-decoration-none">{{ $kamar->post->author->name }}
                             </a>
                         </h6>
                         <p>Last update {{ $kamar->post->created_at->diffForHumans() }}</p>
-                        <p class="verifikasi"><i class='bx bx-envelope-open'></i> Pemilik kos terverifikasi</p>
+                        <p class="verifikasi"><i class='bx bx-envelope-open'></i> Pemilik kios terverifikasi</p>
                     </div>
                     <div class="col-3 col-lg-3 col-md-3">
                         <img src="/img/avatar.png" alt="">
@@ -185,27 +185,26 @@
                 <hr>
 
                 <div class="col-12 col-lg-12 col-md-12 hadiah__sevenkos">
-                    <h4 class="fw-bold">Yang Kamu dapatkan di SevenKos</h4>
+                    <h4 class="fw-bold">Yang Kamu dapatkan di Kios Dishub</h4>
                     <div class="mb-3 d-flex align-items-lg-center hadiah__sevenkos-1">
                         <div style="margin-top: -15px">
                             <img src="/img/free.png" alt="">
                         </div>
                         <p style="margin-left: 10px; display: inline-block; width: 550px">Bebas biaya admin,
-                            kamu tidak akan dikenakan biaya admin saat melakukan pembayaran di SevenKos.</p>
+                            kamu tidak akan dikenakan biaya admin saat melakukan pembayaran di Kios Dishub.</p>
                     </div>
                     <div class="mb-3 d-flex align-items-lg-center hadiah__sevenkos-2">
                         <div style="margin-top: -15px">
                             <img src="/img/shield.png" alt="">
                         </div>
-                        <p style="margin-left: 10px; display: inline-block; width: 550px">Asuransi anak kos,
-                            kompensasi untuk anak kos jika terjadi kehilangan barang di kosan.</p>
+                        <p style="margin-left: 10px; display: inline-block; width: 550px">Asuransi kios.</p>
                     </div>
                     <div class="mb-3 d-flex align-items-lg-center hadiah__sevenkos-3">
                         <div style="margin-top: -15px">
                             <img src="/img/booking.png" alt="">
                         </div>
                         <p style="margin-left: 10px; display: inline-block; width: 550px">Booking langsung,
-                            kos ini bisa di-booking dan dibayar di situs dan aplikasi Mamikos, tanpa harus ketemuan dengan
+                            kios ini bisa di-booking dan dibayar di situs dan aplikasi Kios Dishub, tanpa harus ketemuan dengan
                             pemilik.
                         </p>
                     </div>
@@ -213,15 +212,15 @@
                         <div style="margin-top: -15px">
                             <img src="/img/tamu.png" alt="">
                         </div>
-                        <p style="margin-left: 10px; display: inline-block; width: 550px">Dikelola SevenKos,
-                            kos ini operasionalnya dikelola dan distandardisasi oleh SevenKos.</p>
+                        <p style="margin-left: 10px; display: inline-block; width: 550px">Dikelola Kios Dishub,
+                            kios ini operasionalnya dikelola dan distandardisasi oleh Kios Dishub.</p>
                     </div>
                 </div>
 
                 <hr>
 
                 <div class="col-12 col-lg-12 col-md-12 alamat__kos">
-                    <h4 class="fw-bold mb-3">Alamat Kos</h4>
+                    <h4 class="fw-bold mb-3">Alamat Kios</h4>
                    <p>  Provinsi : <a href="/posts?province={{ $kamar->post->province->slug }}" class="text-decoration-none"
                         style="color: #048853;">
                          {{ $kamar->post->province->name }}
@@ -360,7 +359,7 @@
 
                 <div class="row col-12 col-md-12 col-lg-12 peraturan__kos">
                     <div class="mb-1 col-7 col-md-7 col-lg-7">
-                        <h4 class="fw-bold">Peraturan di kos ini</h4>
+                        <h4 class="fw-bold">Peraturan di kios ini</h4>
                     </div>
                     <div class="mb-2 d-flex align-items-lg-center peraturan__kos-1">
                         <div style="margin-top: -15px">
@@ -410,7 +409,7 @@
                 <hr> --}}
 
                 <div class="row col-12 col-md-12 col-lg-12 info__kos">
-                    <h4 class="fw-bold">Cerita pemilik tentang kos ini</h4>
+                    <h4 class="fw-bold">Cerita pemilik tentang kios ini</h4>
                     <article class="fs-8 text-justify">
                         {!! $kamar->post->body !!}
                     </article>
@@ -427,7 +426,7 @@
                         <a href="" class="cara_bayar2" data-bs-toggle="modal" data-bs-target="#sewa"><button
                                 class="cara_bayar2 btn"><i class='bx bxl-whatsapp'
                                     style="font-size: 30px; display: inline-flex"></i> Sewa
-                                Kos</button></a>
+                                Kios</button></a>
                     </div>
                 </div>
 
@@ -449,14 +448,14 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Sewa Kos</h4>
+                    <h4 class="modal-title">Sewa Kios</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
 
                 <!-- Modal body -->
                 <div class="modal-body">
                     <p>
-                        Cara Sewa Kos
+                        Cara Sewa Kios
                     </p>
                 </div>
 

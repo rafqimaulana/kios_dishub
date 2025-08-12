@@ -6,11 +6,10 @@
                 <!--Grid column-->
                 <div class="col-md-3">
                     <h5 class="text-uppercase font-weight-bold text-decoration-none"><a href="/">
-                            <img src="/img/logo.jpg" width="55" height="55"
-                                class="img-thumbnail rounded-circle icon__footer">
-                        </a>SEVEN INC KOS</h5>
+                            <img src="/img/logo.png" width="55">
+                        </a>Kios Dishub</h5>
                     <p>
-                        Dapatkan "info kos murah" hanya di SEVEN INC KOS. Mau "Sewa Kost Murah"?
+                        Dapatkan "info kios murah" hanya di Kios Dishub. Mau "Sewa Kios Murah"?
                     </p>
                     <div class="icon-contact">
                         <img src="/img/android.png" width="120" height="150"
@@ -95,14 +94,13 @@
                 <div
                     class="col-12 col-md-6 col-lg-6 d-flex align-items-center justify-content-lg-start justify-content-center">
                     <h5 class="text-uppercasetext-decoration-none text-light fw-bold"><a href="/">
-                            <img src="/img/logo.jpg" width="55" height="55"
-                                class="img-thumbnail rounded-circle mr-5"></a>SEVEN INC KOS
+                            <img src="/img/logo.png" width="55"></a>Kios Dishub
                     </h5>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-6 align-items-center d-flex justify-content-center menu__footer">
                     <a href="/" class="text-light">BERANDA</a>
-                    <a href="/posts" class="text-light">KOS</a>
+                    <a href="/posts" class="text-light">KIOS</a>
                     <a href="/categories" class="text-light">LOKASI</a>
                     <a href="/blog" class="text-light">BERITA</a>
                     <a href="/about" class="text-light">TENTANG</a>

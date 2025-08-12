@@ -166,13 +166,13 @@
                 <div class="row col-12 col-lg-12 col-md-12 pemilik__kos">
                     <div class="col-6 col-lg-6 col-md-6">
                         <h6 class="text-justify">
-                            Kos disewakan oleh
+                            Kios disewakan oleh
                             <a href="/kosts?author={{ $kost->author->username }}"
                                 class="text-decoration-none">{{ $kost->author->name }}
                             </a>
                         </h6>
                         <p>Last update {{ $kost->created_at->diffForHumans() }}</p>
-                        <p class="verifikasi"><i class='bx bx-envelope-open'></i> Pemilik kos terverifikasi</p>
+                        <p class="verifikasi"><i class='bx bx-envelope-open'></i> Pemilik kios terverifikasi</p>
                     </div>
                     <div class="col-3 col-lg-3 col-md-3">
                         <img src="/img/avatar.png" alt="">
@@ -182,36 +182,33 @@
                 <hr>
 
                 <div class="col-12 col-lg-12 col-md-12 hadiah__sevenkos">
-                    <h4 class="fw-bold">Yang Kamu dapatkan di SevenKos</h4>
+                    <h4 class="fw-bold">Yang Kamu dapatkan di Kios Dishub</h4>
                     <div class="mb-3 d-flex align-items-lg-center hadiah__sevenkos-1">
                         <div style="margin-top: -15px">
                             <img src="/img/free.png" alt="">
                         </div>
                         <p style="margin-left: 10px; display: inline-block; width: 550px">Bebas biaya admin,
-                            kamu tidak akan dikenakan biaya admin saat melakukan pembayaran di SevenKos.</p>
+                            kamu tidak akan dikenakan biaya admin saat melakukan pembayaran di Kios Dishub.</p>
                     </div>
                     <div class="mb-3 d-flex align-items-lg-center hadiah__sevenkos-2">
                         <div style="margin-top: -15px">
                             <img src="/img/shield.png" alt="">
                         </div>
-                        <p style="margin-left: 10px; display: inline-block; width: 550px">Asuransi anak kos,
-                            kompensasi untuk anak kos jika terjadi kehilangan barang di kosan.</p>
+                        <p style="margin-left: 10px; display: inline-block; width: 550px">Asuransi kios</p>
                     </div>
                     <div class="mb-3 d-flex align-items-lg-center hadiah__sevenkos-3">
                         <div style="margin-top: -15px">
                             <img src="/img/booking.png" alt="">
                         </div>
-                        <p style="margin-left: 10px; display: inline-block; width: 550px">Booking langsung,
-                            kos ini bisa di-booking dan dibayar di situs dan aplikasi Mamikos, tanpa harus ketemuan dengan
-                            pemilik.
+                        <p style="margin-left: 10px; display: inline-block; width: 550px">Booking langsung.
                         </p>
                     </div>
                     <div class="d-flex align-items-lg-center hadiah__sevenkos-4">
                         <div style="margin-top: -15px">
                             <img src="/img/tamu.png" alt="">
                         </div>
-                        <p style="margin-left: 10px; display: inline-block; width: 550px">Dikelola SevenKos,
-                            kos ini operasionalnya dikelola dan distandardisasi oleh SevenKos.</p>
+                        <p style="margin-left: 10px; display: inline-block; width: 550px">Dikelola Kios Dishub,
+                            kios ini operasionalnya dikelola dan distandardisasi oleh Kios Dishub.</p>
                     </div>
                 </div>
 
@@ -429,7 +426,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <p>
-                        Cara Sewa Kos
+                        Cara Sewa Kios
                     </p>
                 </div>
 

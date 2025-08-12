@@ -2,7 +2,7 @@
 
 @section('container')
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Edit Kost</h1>
+        <h1 class="h2">Edit Kios</h1>
     </div>
 
     <div class="col-lg-8">
@@ -11,7 +11,7 @@
             @csrf
 
             <div class="mb-3">
-                <label for="name" class="form-label">Nama Kos</label>
+                <label for="name" class="form-label">Nama Kios</label>
                 <input type="text" class="form-control @error('name') is-invalid @enderror" id="name"
                     name="name" required autofocus value="{{ old('name', $post->name) }}">
                 @error('name')
@@ -454,7 +454,7 @@
             @enderror
         </div>
 
-        <h3>Peraturan kos</h3>
+        <h3>Peraturan kios</h3>
 
         <div class="mb-3">
             <label for="akses" class="form-label"><h5>Ruang akses</h5></label>

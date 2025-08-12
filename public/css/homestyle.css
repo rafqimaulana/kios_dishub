@@ -246,7 +246,7 @@ body {
 }
 
 .img-hero {
-    height: 100%;
+    height: 700%;
     z-index: 0;
 }
 
@@ -3787,8 +3787,8 @@ footer a {
     }
 
     .img-hero {
-        width: 700px;
-        height: 700px;
+        width: 600px;
+        height: 600px;
         z-index: 1;
     }
 

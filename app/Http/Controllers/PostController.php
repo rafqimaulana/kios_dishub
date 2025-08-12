@@ -17,41 +17,51 @@ use Illuminate\Support\Facades\Hash;
 
 class PostController extends Controller
 {
-    public function index()
-    {
-        $title = '';
+public function index()
+{
+    $title = '';
 
-        if (request('province')) {
-            $province = province::firstWhere('slug', request('province'));
-            $title = ' in ' . $province->name;
-        }
+    if (request('province')) {
+        $province = province::firstWhere('slug', request('province'));
+        $title = ' in ' . $province->name;
+    }
 
-        if (request('regency')) {
-            $regency = Regency::firstWhere('name', request('regency'));
-            $title = ' in ' . $regency->name;
-        }
+    if (request('regency')) {
+        $regency = Regency::firstWhere('name', request('regency'));
+        $title = ' in ' . $regency->name;
+    }
 
-        if (request('district')) {
-            $district = district::firstWhere('name', request('district'));
-            $title = ' in ' . $district->name;
-        }
+    if (request('district')) {
+        $district = district::firstWhere('name', request('district'));
+        $title = ' in ' . $district->name;
+    }
 
-        if (request('village')) {
-            $village = village::firstWhere('name', request('village'));
-            $title = ' in ' . $village->name;
-        }
+    if (request('village')) {
+        $village = village::firstWhere('name', request('village'));
+        $title = ' in ' . $village->name;
+    }
 
-        if (request('author')) {
-            $author = User::firstWhere('username', request('author'));
-            $title = ' by ' . $author->name;
-        }
+    if (request('author')) {
+        $author = User::firstWhere('username', request('author'));
+        $title = ' by ' . $author->name;
+    }
+
+        $posts = Post::latest()
+            ->filter(request(['search', 'province', 'regency', 'district', 'village', 'author']))
+            ->get();
+
+        $groupedPosts = $posts->groupBy(function ($post) {
+            return $post->village->name ?? 'Unknown Village';
+        });
 
         return view('posts', [
-            "title" => "Semua Kos" . $title,
+            "title" => "Semua Kios" . $title,
             "active" => 'posts',
-            "posts" => Post::latest()->filter(request(['search', 'province', 'regency', 'district', 'village','author']))->paginate(7)->withQueryString(),
+            "groupedPosts" => $groupedPosts, // <== THIS IS THE VARIABLE YOU PASS
         ]);
-    }
+
+}
+
 
     public function show(Post $post, User $user, kamar $kamar)
     {
@@ -83,6 +93,7 @@ class PostController extends Controller
             'slug' => ['required','max:255', 'unique:pembayarans'],
             'post_id' => 'required|max:255',
             'status' => 'required|max:255',
+            'image' => '',
         ]);
 
         pembayaran::create($validatedData);

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{-- icons title --}}
-    <link class="img-thumbnail" rel="icon img-thumbnail rounded-circle" type="image/x-icon" href="/img/logo.jpg" />
+    <link rel="icon img-thumbnail rounded-circle" type="image/x-icon" href="/img/logo.png" />
     <meta charset="utf-8">
 
     <!-- Bootstrap CSS -->
@@ -44,9 +44,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-fixed">
         <div class="container">
             <a href="/">
-                <img src="/img/logo.jpg" width="55" height="55" class="img-thumbnail rounded-circle me-3">
+                <img src="/img/logo.png"  height="55" >
             </a>
-            <a class="navbar-brand page-scroll" href="#home">SEVEN INC KOS</a>
+            <a class="navbar-brand page-scroll" href="#home">KIOS DISHUB</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,9 +59,9 @@
                     <li class="nav-item mx-2">
                         <a class="nav-link page-scroll" href="#layanan">LAYANAN</a>
                     </li>
-                    <li class="nav-item mx-2">
+                    {{-- <li class="nav-item mx-2">
                         <a class="nav-link page-scroll" href="#promo">PROMO</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item mx-2">
                         <a class="nav-link page-scroll" href="#contact">KONTAK</a>
                     </li>
@@ -109,7 +109,7 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Masuk ke Mamikos</h4>
+                    <h4 class="modal-title">Masuk ke Kios Dishub</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
 
@@ -130,7 +130,7 @@
                                             <img src="/img/sewa.jpg" alt="">
                                         </div>
                                         <div class="description__sewa">
-                                            <h4>Pencari Kos</h4>
+                                            <h4>Pencari Kios</h4>
                                         </div>
                                     </a>
                                 </div>
@@ -149,7 +149,7 @@
                                             <img src="/img/sewa.jpg" alt="">
                                         </div>
                                         <div class="description__sewa">
-                                            <h4>Pemilik Kos</h4>
+                                            <h4>Pemilik Kios</h4>
                                         </div>
                                     </a>
                                 </div>
@@ -184,17 +184,17 @@
                         </script>
                     </div>
                     <h1 class="title_header" style="--duration: 1s">
-                        <span style="--delay: .5s"> Membantu Temukan Kos Impian.</span>
+                        <span style="--delay: .5s"> Membantu Temukan Kios Impian.</span>
                     </h1>
                     <p class="subtitle_header" style="--duration: 1s">
-                        <span class="fw-bold" style="--delay: .7s">Seven Kos INC</span><span
-                            style="--delay: .9s; margin-top: -50px">hadir untuk temukan Kos terbaik untukmu, untuk di
+                        <span class="fw-bold" style="--delay: .7s">Kios Dishub</span><span
+                            style="--delay: .9s; margin-top: -50px">hadir untuk temukan Kios terbaik untukmu, untuk di
                             sewa dengan sumber terpercaya.</span>
                     </p>
                     <a href="/posts" style="--duration: 1s;">
                         <span style="--delay: .5s">
                             <button class="button-lg-primary">
-                                Temukan Kos
+                                Temukan Kios
                             </button>
                             <a href="/posts">
                                 <img src="/img/arrow.png" alt="">
@@ -209,7 +209,7 @@
                 </span>
                 </div> --}}
             </div>
-            <img src="/img/hero banner.png" alt="" class="position-absolute end-0 bottom-0 img-hero">
+            <img src="/img/sliderdishub.png" alt="" class="position-absolute end-0 bottom-0 img-hero">
             <img src="/img/accent.png" alt="" class="position-absolute h-100 top-0 start-0 accent-img">
             <div class="col-md-12 hero-tagline my-auto mt-4 text-center">
                 <div class="home__scroll">
@@ -232,52 +232,51 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <h2 class="fw-bold">Layanan Kami</h2>
-                    <span class="sub-title">Seven Kos INC hadir menjadi solusi bagi kamu</span>
+                    <span class="sub-title">Kios Dishub hadir menjadi solusi bagi kamu</span>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-md-4 text-center mb-4">
+                <div class="col-md-6 text-center mb-4">
                     <a href="/posts" class="text-decoration-none">
                         <div class="card-layanan">
                             <div class="circle-icon position-relative mx-auto">
                                 <img src="/img/home.png" alt=""
                                     class="position-absolute top-50 start-50 translate-middle">
                             </div>
-                            <h3 class="mt-4">Kos Terbaru</h3>
-                            <p class="mt-3">Seven Kos INC kini jadi kenyataan, sewa kos bary dengan fasilitas terbaik
+                            <h3 class="mt-4">Kios Terbaru</h3>
+                            <p class="mt-3">Kios Dishub kini jadi kenyataan, sewa kios dengan fasilitas terbaik
                                 dengan lingkungan yang nyaman.</p>
                         </div>
                     </a>
 
                 </div>
-                <div class="col-md-4 text-center mb-4">
+                <div class="col-md-6 text-center mb-4">
                     <a href="/posts" class="text-decoration-none">
                         <div class="card-layanan">
                             <div class="circle-icon position-relative mx-auto">
                                 <img src="/img/sewa.png" alt=""
                                     class="position-absolute top-50 start-50 translate-middle">
                             </div>
-                            <h3 class="mt-4">Sewa Kos</h3>
-                            <p class="mt-3">Sewa Kos yang indah untuk anda, pilihan terbaik untuk tempat tinggal
-                                anda.</p>
+                            <h3 class="mt-4">Sewa Kios</h3>
+                            <p class="mt-3">Sewa Kios yang indah untuk anda, pilihan terbaik untuk usaha anda.</p>
                         </div>
                     </a>
 
                 </div>
-                <div class="col-md-4 text-center mb-4">
+                {{-- <div class="col-md-4 text-center mb-4">
                     <a href="/posts" class="text-decoration-none">
                         <div class="card-layanan">
                             <div class="circle-icon position-relative mx-auto">
                                 <img src="/img/town.png" alt=""
                                     class="position-absolute top-50 start-50 translate-middle">
                             </div>
-                            <h3 class="mt-4">Beli Kos</h3>
-                            <p class="mt-3">Beli Kos sempurna dengan harga terbaik kualitas terjamin dari sumber
+                            <h3 class="mt-4">Beli Kios</h3>
+                            <p class="mt-3">Beli Kios sempurna dengan harga terbaik kualitas terjamin dari sumber
                                 terpercaya.</p>
                         </div>
                     </a>
 
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -391,9 +390,9 @@
         <div class="container mb-5 elemen">
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <h2>Temukan Kos Impianmu</h2>
+                    <h2>Temukan Kios Impianmu</h2>
                     <p class="sub-search">sekarang Anda dapat menghemat semua hal stres, waktu, dan biaya tersembunyi,
-                        dengan ratusan kos untuk anda</p>
+                        dengan ratusan kios untuk anda</p>
                 </div>
                 <form action="#rekomendasi">
                     @csrf
@@ -433,8 +432,8 @@
                             <img src="/img/sewa.jpg" alt="">
                         </div>
                         <div class="description__sewa">
-                            <h3>Coba cara baru sewa kos!</h3>
-                            <p>Biar sewa kos lebih gampang dan aman, coba sistem sewa khusus buat anak kos.</p>
+                            <h3>Coba cara baru sewa kios!</h3>
+                            <p>Biar sewa kios lebih gampang dan aman.</p>
                             <br>
                             <a href="">mau coba?</a>
                         </div>
@@ -451,7 +450,7 @@
                             <img src="/img/penghargaan.png" alt="">
                         </div>
                         <div class="description__sertifikat">
-                            <h3>Kos Dikelola Mamikos, Terjamin Nyaman</h3>
+                            <h3>Kios Dikelola Dinas Perhubungan, Terjamin Nyaman</h3>
                             <p>Fast Response 24/7, Foto Properti Akurat, Foto Area & Informasi lengkap</p>
                         </div>
                     </a>
@@ -465,12 +464,12 @@
         <div class="container elemen">
             <div class="row mt-5">
                 <div class="col-12 col-md-6 col-lg-9 text-lg-start">
-                    <h2 class="fw-bold">Rekomendasi Kos Untuk Mu</h2>
+                    <h2 class="fw-bold">Rekomendasi Kios Untuk Mu</h2>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mt-4 button__kos mb-4">
                     <a href="/posts">
                         <button class="button__kost">
-                            Lihat Semua Kos<img src="/img/Vector.png" alt="" class="ms-3">
+                            Lihat Semua Kios<img src="/img/Vector.png" alt="" class="ms-3">
                         </button>
                     </a>
                 </div>
@@ -628,7 +627,7 @@
     </section>
 
     {{-- promo --}}
-    <section class="promo" id="promo">
+    {{-- <section class="promo" id="promo">
         <div class="container mb-5 mt-5 elemen">
             <!-- carousel -->
             <div class="row wrap-carousel">
@@ -681,7 +680,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     {{-- area --}}
     <section id="fitur" class="overflow-hidden">
@@ -689,7 +688,7 @@
             <div class="row mb-4 mt-5">
                 <div class="col-12 col-md-6 col-lg-9 text-lg-start">
                     <h2 class="fw-bold">
-                        Area Kos Terpopuler
+                        Area Kios Terpopuler
                     </h2>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 button-fiturs">
@@ -732,7 +731,7 @@
     </section>
 
     {{-- Vidio --}}
-    <section id="vidio">
+    {{-- <section id="vidio">
         <div class="container mt-5 elemen">
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-12 text-center">
@@ -742,61 +741,39 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="about" id="about">
         <div class="container-fluid d-flex mt-5 bg__about elemen"
             style="background-color:rgb(224, 224, 224);margin-bottom: -158px">
             <div class="row col-12 col-md-12 col-lg-12">
                 <div class="col-6">
-                    <h5 class="fw-bold mb-3 mt-5">SevenKos - Website Anak Kos di Indonesia</h5>
-                    <p class="text-justify">Mamikos memanfaatkan teknologi untuk berkembang dari aplikasi cari kos
-                        menjadi
-                        aplikasi yang memudahkan calon anak kos untuk booking properti kos dan juga melakukan pembayaran
-                        kos. Saat ini kami memiliki lebih dari 2 juta kamar kos yang tersebar di lebih dari 140 kota di
-                        seluruh Indonesia. Mamikos juga menyediakan layanan manajemen properti, bernama Singgahsini dan
-                        Apik, untuk menjawab kebutuhan calon penghuni yang menginginkan kos eksklusif atau kos murah.
-                        Mamikos berusaha untuk bisa terus menyajikan daftar rumah kos dengan data ketersediaan kamar
-                        yang
-                        akurat, fasilitas kos terperinci, dilengkapi dengan foto serta detail harga kos, dan kemudahan
-                        survei via fitur virtual tour agar calon penghuni mendapatkan kenyamanan dalam proses pencarian
-                        dan
-                        booking kos.
+                    <h5 class="fw-bold mb-3 mt-5">Kios Dishub</h5>
+                    <p class="text-justify">Pencari Kios
+                        .
                     </p>
-                    <p class="mb-5 text-justify">Untuk memberikan perlindungan bagi para anak kos selama pandemi,
-                        Mamikos
-                        menghadirkan Kos Higienis. Kos Higienis merupakan kos dengan konsep yang menerapkan pelaksanaan
-                        standar protokol kesehatan, seperti disinfeksi kamar, jaga jarak, penggunaan masker, dan swab
-                        antigen untuk kamu saat akan mulai ngekos nanti.</p>
-                    <h5 class="fw-bold mb-3">Fitur yang dapat dimanfaatkan di Mamikos</h5>
+                    <p class="mb-5 text-justify">Untuk memberikan perlindungan bagi para pencari kios.
+                        </p>
+                    <h5 class="fw-bold mb-3">Fitur yang dapat dimanfaatkan</h5>
                     <p class="fw-bold text-justify">a. Fitur Pencarian</p>
-                    <p class="ml-3 text-justify">Di kolom pencarian, kamu bisa cari kos di sekitarmu atau kos di
+                    <p class="ml-3 text-justify">Di kolom pencarian, kamu bisa cari kios di sekitarmu atau kios di
                         seluruh
-                        daerah di Indonesia dengan memasukkan keyword, seperti kos dekat Kampus/Universitas di
-                        masing-masing
-                        kota, cari kos di Jogja, Depok, Jakarta, Surabaya, Bandung, dan kota besar lainnya atau cari kos
-                        di
-                        sekitar lokasi saya saat ini.</p>
+                        daerah di Kalimantan Timur</p>
                     <p class="fw-bold text-justify">b. Fitur Pencarian</p>
-                    <p class="ml-3 text-justify">Cari kos berdasarkan fasilitas kos yang kamu mau, lebih mudah dengan
-                        filter
-                        berdasarkan Kos AC, Kos Kamar mandi dalam, Kos Wifi. Bisa juga pilih kos dengan tipe kos, mulai
-                        dari
-                        Kos Harian, Kos Bulanan hingga Kos Tahunan. Mau cari Kos Bebas, Kos Pasutri, Kos Putra, Kos
-                        Putri,
-                        Kos Campur juga bisa.</p>
+                    <p class="ml-3 text-justify">Cari kios berdasarkan fasilitas kios yang kamu mau, lebih mudah dengan
+                        </p>
                     <p class="fw-bold text-justify">c. Chat dengan Penyewa</p>
-                    <p class="ml-3 text-justify">Terhubung langsung dengan pemilik kos dan bisa bertanya lebih lanjut
-                        mengenai info kos melalui fitur chat di Mamikos.</p>
+                    <p class="ml-3 text-justify">Terhubung langsung dengan pemilik kios dan bisa bertanya lebih lanjut
+                        mengenai info kios melalui fitur chat.</p>
                 </div>
                 <div class="col-6 mt-5">
-                    <p class="fw-bold text-justify">d. Kos Review</p>
-                    <p class="ml-3 text-justify">Lihat review dari para penghuni kos agar kamu semakin yakin untuk sewa
-                        kos.
-                        Kamu juga bisa tulis pengalaman kamu selama ngekos untuk menambah info kos tersebut.</p>
+                    <p class="fw-bold text-justify">d. Kios Review</p>
+                    <p class="ml-3 text-justify">Lihat review dari para penghuni kios agar kamu semakin yakin untuk sewa
+                        kios.
+                        Kamu juga bisa tulis pengalaman kamu selama ngekios untuk menambah info kios tersebut.</p>
                     <p class="fw-bold text-justify">e. Favorit</p>
-                    <p class="ml-3 text-justify">Ketemu dengan kos idaman, bisa disimpan dulu melalui fitur favorit
-                        kos. Kos
+                    <p class="ml-3 text-justify">Ketemu dengan kios idaman, bisa disimpan dulu melalui fitur favorit
+                        kios. Kios
                         yang sudah kamu simpan, dapat kamu booking di kemudian hari.</p>
                 </div>
             </div>
@@ -811,11 +788,10 @@
                     <!--Grid column-->
                     <div class="col-md-3">
                         <h5 class="text-uppercase font-weight-bold text-decoration-none"><a href="/">
-                                <img src="/img/logo.jpg" width="55" height="55"
-                                    class="img-thumbnail rounded-circle icon__footer">
-                            </a>SEVEN INC KOS</h5>
+                                <img src="/img/logo.png" width="55">
+                            </a>Kios Dishub</h5>
                         <p>
-                            Dapatkan "info kos murah" hanya di SEVEN INC KOS. Mau "Sewa Kost Murah"?
+                            Dapatkan "info Kios murah" hanya di Kios Dishub. Mau "Sewa Kios Murah"?
                         </p>
                         <div class="icon-contact">
                             <img src="/img/android.png" width="120" height="150"
@@ -827,20 +803,20 @@
                     </div>
                     <!--Grid column-->
                     <div class="col-md-3 menu__contact">
-                        <h5 class="text-uppercase font-weight-bold mb-2">SEVEN INC KOS</h5>
+                        <h5 class="text-uppercase font-weight-bold mb-2">Kios Dishub</h5>
 
                         <ul class="list-unstyled mb-0 text-decoration-none">
                             <li class="mb-2">
                                 <a href="/about" class="text-decoration-none">Tentang kami</a>
                             </li>
                             <li class="mb-2">
-                                <a href="#!" class="text-decoration-none">Promosikan Kost Anda</a>
+                                <a href="#!" class="text-decoration-none">Promosikan Kios Anda</a>
                             </li>
                             <li class="mb-2">
                                 <a href="/pusatbantuan" class="text-decoration-none">Pusat Bantuan</a>
                             </li>
                             <li class="mb-2 mb-">
-                                <a href="/blog" class="text-decoration-none">Blog SEVEN INC</a>
+                                <a href="/blog" class="text-decoration-none">Blog Kios Dishub</a>
                             </li>
                             <li class="mb-2">
                                 <a href="/syarat" class="text-decoration-none">Syarat dan Ketentuan Umum</a>
@@ -861,9 +837,7 @@
                                         <img src="/img/alamat.png" alt="">
                                     </div>
                                     <a href="https://goo.gl/maps/3SP9VmphtbLvmdVRA" class="text-decoration-none"
-                                        style="margin-left: 18px; display: inline-block; width: 550px">Karangjambe, Gg.
-                                        Arjuna No.59, Jaranan, Banguntapan, Kec. Banguntapan, Kabupaten Bantul Daerah
-                                        Istimewa Yogyakarta 55198</a>
+                                        style="margin-left: 18px; display: inline-block; width: 550px">Samarinda</a>
                                 </div>
                                 <div class="mb-3">
                                     <img src="/img/telpon.png" alt="">
@@ -873,7 +847,7 @@
                                 <div class="mb-3">
                                     <img src="/img/pesan.png" alt="">
                                     <a href="#" class="text-decoration-none"
-                                        style="margin-left: 18px">seveninc@gmail.com</a>
+                                        style="margin-left: 18px">dishubkaltim@gmail.com</a>
                                 </div>
 
                             </div>
@@ -900,8 +874,8 @@
                     <div
                         class="col-12 col-md-6 col-lg-6 d-flex align-items-center justify-content-lg-start justify-content-center">
                         <h5 class="text-uppercasetext-decoration-none text-light"><a href="/">
-                                <img src="/img/logo.jpg" width="55" height="55"
-                                    class="img-thumbnail rounded-circle mr-5"></a>SEVEN INC KOS
+                                <img src="/img/logo.png" width="55" height="55"
+                                    class="img-thumbnail rounded-circle mr-5"></a>Kios Dishub
                         </h5>
                     </div>
 

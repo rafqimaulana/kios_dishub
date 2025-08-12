@@ -15,6 +15,7 @@ class Post extends Model
 
     protected $guarded = ['id'];
     protected $with = ['province', 'district', 'regency', 'village', 'author','jenis'];
+    protected $filable = 'image';
 
     public function scopeFilter($query, array $filters)
     {

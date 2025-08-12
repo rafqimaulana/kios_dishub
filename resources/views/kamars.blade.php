@@ -81,7 +81,7 @@
                                 <div class="card-fasilitas mt-4 d-flex justify-content-between px-4">
                                     <span>
                                         <img src="/img/bed.png" alt=""> {{ $kamars[0]->post->kamar }}
-                                        <h6>Kamar Kos</h6>
+                                        <h6>Kamar Kios</h6>
                                     </span>
                                     <span class="text-center">
                                         <img src="/img/bathtub.png" alt="">
@@ -152,7 +152,7 @@
                                     <div class="card-fasilitas mt-4 d-flex justify-content-between px-4">
                                         <span>
                                             <img src="/img/bed.png" alt=""> {{ $kamar->post->kamar }}
-                                            <h6>Kamar Kos</h6>
+                                            <h6>Kamar Kios</h6>
                                         </span>
                                         <span class="text-center">
                                             <img src="/img/bathtub.png" alt="">

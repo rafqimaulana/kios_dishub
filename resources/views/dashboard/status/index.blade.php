@@ -13,22 +13,24 @@
     <table class="table table-striped table-sm">
         <thead>
             <tr>
-                <th scope="col">No</th>
-                <th scope="col">pemesan</th>
+                {{-- <th scope="col">No</th> --}}
+                <th scope="col">Nama Penyewa</th>
                 <th scope="col">Nama Kios</th>
                 <th scope="col">Kota</th>
                 <th scope="col">Status</th>
                 <th scope="col">Pemilik</th>
                 <th scope="col">No rekening</th>
                 <th scope="col">Foto</th>
+                <th scope="col">Tanggal Pembayaran</th>
+                <th scope="col">Tanggal Selesai</th>
                 <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
             @foreach ($pembayarans as $pembayaran)
                 <tr>
-                    <td>{{ $loop->iteration }}</td>
-                    <td>{{ $pembayaran->author->username }}</td>
+                    {{-- <td>{{ $loop->iteration }}</td> --}}
+                    <td>{{ $pembayaran->author->name }}</td>
                     <td>{{ $pembayaran->post->name }}</td>
                     <td>{{ $pembayaran->post->regency->name }}</td>
                     <td>{{ $pembayaran->status }}</td>
@@ -39,10 +41,17 @@
                         <img src="{{ asset('storage/' . $pembayaran->image) }}" style="width:40px;height:40px;" >
                     </a></td>
 
+                    @if ($pembayaran->status == 'Sedang diproses')
+                        <td>-Belum Dibayar-</td>
+                        <td>-Belum Dibayar-</td>
+                    @else
+                        <td>{{ $pembayaran->updated_at->format('M d Y') }}</td>
+                        <td>{{ $pembayaran->updated_at->addMonth()->format('M d Y') }}</td>
+                    @endif
                     <td>
                         <a href="/dashboard/pembayaran/{{ $pembayaran->slug }}/edit" class="badge bg-warning"><span
                                 data-feather="edit" class="align-text-bottom"></span></a>
-                        <a href="/dashboard/infos/create" class="btn btn-primary">info</a>
+                        {{-- <a href="/dashboard/infos/create" class="btn btn-primary">info</a> --}}
                          <form action="/dashboard/pembayaran/{{ $pembayaran->slug }}" method="POST" class="d-inline">
                             @method('delete')
                             @csrf

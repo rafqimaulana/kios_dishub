@@ -10,7 +10,7 @@
         <div class="container-fluid rounded d-flex mt-1" style="background-color:rgba(255, 255, 255, 0)">
             <div class="row col-lg-12 cara">
                 <div class="col-lg-12">
-                    <h5 class="fw-bold mt-5">SevenKos - Fitur
+                    <h5 class="fw-bold mt-5">Kios Dishub - Fitur
                     @can('pemilik')
                     <a>Pemilik</a>
                     @endcan
@@ -20,20 +20,20 @@
                     @endcan
 
                     </h5>
-                    <h5 class="fw-bold mb-3">Silahkan klik menu kos pada sidebar disamping</h5>
+                    <h5 class="fw-bold mb-3">Silahkan klik menu kios pada sidebar disamping</h5>
                     <ul>
                         <li>
                             Fitur Home Berfungsi Untuk Kembali ke halaman awal
                         </li>
                         <li>
-                            Fitur Favorit Berguna untuk menyimpan kos favorit anda
+                            Fitur Favorit Berguna untuk menyimpan kios favorit anda
                         </li>
                         <li>
-                            Fitur Pemesanan Berguna melihat dan melanjutkan pembayaran dari kos yang sudah di pesan
+                            Fitur Pemesanan Berguna melihat dan melanjutkan pembayaran dari kios yang sudah di pesan
                         </li>
                         @can('pemilik')
                         <li>
-                            Fitur Kos Berguna untuk menginputkan, mengedit, dan menghapus kos anda
+                            Fitur Kios Berguna untuk menginputkan, mengedit, dan menghapus Kios Anda
                         </li>
                         <li>
                             Fitur Info Berguna untuk memberitahu anda bahwa pembayaran dari user lain sudah diterima
@@ -146,8 +146,8 @@
         <div class="container-fluid rounded d-flex mt-1" style="background-color:rgba(255, 255, 255, 0)">
             <div class="row col-lg-12 cara">
                 <div class="col-lg-12">
-                    <h5 class="fw-bold mt-5">SevenKos - Ingin menginputkan Kos Anda?</h5>
-                    <h5 class="fw-bold mb-3">silahkan klik menu kos pada sidebar disamping</h5>
+                    <h5 class="fw-bold mt-5">Kios Dishub - Ingin menginputkan Kios Anda?</h5>
+                    <h5 class="fw-bold mb-3">silahkan klik menu kios pada sidebar disamping</h5>
                     <ul>
                         <li>
                             Input No Wa:
@@ -156,10 +156,10 @@
                         </li>
                         <li>
                             Input Map(Lokasi):
-                            <p>Pertama-tama mencari lokasi kos anda pada aplikasi google maps, lalu:</p>
+                            <p>Pertama-tama mencari lokasi Kios Anda pada aplikasi google maps, lalu:</p>
                             <ul>
                                 <li>
-                                    Cari Lokasi Kos Anda
+                                    Cari Lokasi Kios Anda
                                 </li>
                                 <li>
                                     Klik Menu Share

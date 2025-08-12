@@ -2,8 +2,8 @@
     <div class="logo_content">
         <div class="logo">
             <div class="logo_name">
-                <img src="/img/logo.jpg" width="30" height="30" class="img-thumbnail rounded-circle me-3">
-                SEVEN INC KOS
+                <img src="/img/logo.png" width="30">
+                Kios Dishub
             </div>
         </div>
         <i class='bx bx-menu' id="btn"></i>
@@ -28,13 +28,13 @@
             </a>
             <span class="tooltip">Dashboard</span>
         </li>
-        <li>
+        {{-- <li>
             <a href="/dashboard/keranjang" class="{{ Request::is('dashboard/keranjang*') ? 'active' : '' }}">
                 <i class='bx bxs-like bx-tada'></i>
                 <span class="link_name">Favorit</span>
             </a>
             <span class="tooltip">Favorit</span>
-        </li>
+        </li> --}}
         <li>
             <a href="/dashboard/pembayaran" class="{{ Request::is('dashboard/pembayaran*') ? 'active' : '' }}">
                 <i class='bx bx-dollar-circle' ></i>
@@ -42,44 +42,52 @@
             </a>
             <span class="tooltip">Pemesanan</span>
         </li>
-        <li>
-            <a href="/dashboard/infosuser" class="{{ Request::is('dashboard/infosuser*') ? 'active' : '' }}">
-                <i class='bx bxs-info-square'></i>
-                <span class="link_name">Pemberitahuan</span>
-            </a>
-            <span class="tooltip">Pemberitahuan</span>
-        </li>
+        {{-- <xx --}}
         @can('pemilik')
-        <li>
+        {{-- <li>
             <a href="/dashboard/posts" class="{{ Request::is('dashboard/posts*') ? 'active' : '' }}">
                 <i class='bx bxs-buildings'></i>
-                <span class="link_name">Kos</span>
+                <span class="link_name">Kios</span>
             </a>
-            <span class="tooltip">Kos</span>
+            <span class="tooltip">Kios</span>
+        </li> --}}
+        <li>
+            <a href="/dashboard/status" class="{{ Request::is('dashboard/status*') ? 'active' : '' }}">
+                <i class='bx bxs-buildings'></i>
+                <span class="link_name">Status Bayar</span>
+            </a>
+            <span class="tooltip">Status Bayar</span>
         </li>
         @endcan
         @can('admin')
         <li>
             <a href="/dashboard/posts" class="{{ Request::is('dashboard/posts*') ? 'active' : '' }}">
                 <i class='bx bxs-buildings'></i>
-                <span class="link_name">Kos</span>
+                <span class="link_name">Kios</span>
             </a>
-            <span class="tooltip">Kos</span>
+            <span class="tooltip">Kios</span>
         </li>
-            <li>
+        {{-- <li>
+            <a href="/dashboard/status" class="{{ Request::is('dashboard/status*') ? 'active' : '' }}">
+                <i class='bx bxs-buildings'></i>
+                <span class="link_name">Status Bayar</span>
+            </a>
+            <span class="tooltip">Status Bayar</span>
+        </li> --}}
+            {{-- <li>
                 <a href="/dashboard/news" class="{{ Request::is('dashboard/news*') ? 'active' : '' }}">
                     <i class='bx bxl-blogger'></i>
                     <span class="link_name">Berita</span>
                 </a>
                 <span class="tooltip">Berita</span>
-            </li>
-        <li>
+            </li> --}}
+        {{-- <li>
             <a href="/dashboard/infos" class="{{ Request::is('dashboard/infos*') ? 'active' : '' }}">
                 <i class='bx bxs-info-square'></i>
                 <span class="link_name">Semua Info</span>
             </a>
             <span class="tooltip">Semua Info</span>
-        </li>
+        </li> --}}
         @endcan
         @can('superadmin')
         <li>
@@ -89,6 +97,13 @@
             </a>
             <span class="tooltip">Semua User</span>
         </li>
+        {{-- <li>
+            <a href="/dashboard/status" class="{{ Request::is('dashboard/status*') ? 'active' : '' }}">
+                <i class='bx bxs-buildings'></i>
+                <span class="link_name">Status Bayar</span>
+            </a>
+            <span class="tooltip">Status Bayar</span>
+        </li> --}}
         @endcan
     </ul>
 </div>

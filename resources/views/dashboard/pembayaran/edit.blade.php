@@ -49,13 +49,16 @@
                 <small>Pilihan Baru</small>
                 <select  type="text" class="form-control" id="txtName1" value="{{ old('status', $pembayaran->status) }} " >
                     <option value="Sedang diproses">Sedang diproses</option>
-                    <option value="Pembayaran Berhasil">Pembayaran Berhasil</option>
+                    <option value="Pembayaran Berhasil - Transfer">Transfer</option>
+                    <option value="Pembayaran Berhasil - Cash">Cash</option>
+                    {{-- <option value="Pembayaran Berhasil">Pembayaran Berhasil</option> --}}
                 </select >
             </div>
 
             <div class="mb-3">
                 <label for="maps" class="form-label">Pemilik</label>
-                <input type="text" class="form-control" id="txtName" value="{{ old('user_id', $pembayaran->user_id) }}" />
+                <input type="text" class="form-control" id="txtNameshow" value="{{ old('user_id', $pembayaran->author->username) }}" readonly /> 
+                <input type="text" class="form-control" id="txtName" value="{{ old('user_id', $pembayaran->user_id) }}" hidden /> 
             </div>
             @endcan
 

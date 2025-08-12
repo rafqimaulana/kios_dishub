@@ -69,7 +69,7 @@
                         <div class="card-fasilitas mt-4 d-flex justify-content-between px-4">
                             <span>
                                 <img src="/img/bed.png" alt=""> {{ $keranjang->post->kamar }}
-                                <h6>Kamar Kos</h6>
+                                <h6>Kios</h6>
                             </span>
                             <span class="text-center">
                                 <img src="/img/bathtub.png" alt="">

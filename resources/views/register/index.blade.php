@@ -27,8 +27,8 @@
         <div class="row justify-content-center align-items-center my-3 mx-2">
             <div class="col-lg-4">
                 <div class="header text-center">
-                    <img class="img-thumbnail rounded-circle mx-auto d-block mb-3" src="img/logo.jpg" alt=""
-                        width="100" height="100">
+                    <img src="img/logo.png" alt=""
+                         height="100">
                     <h1>Registration Form</h1>
                     <p>Please enter your details!</p>
                 </div>

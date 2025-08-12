@@ -2,14 +2,14 @@
 
 @section('container')
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Buat Kost Baru</h1>
+        <h1 class="h2">Buat Kios Baru</h1>
     </div>
 
     <div class="col-lg-8">
         <form method="post" action="/dashboard/posts" class="mb-5" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
-                <label for="name" class="form-label">Nama Kos</label>
+                <label for="name" class="form-label">Nama Kios</label>
                 <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name"
                     required autofocus value="{{ old('name') }}">
                 @error('name')
@@ -156,14 +156,14 @@
                 @enderror
             </div>
 
-            <h3>Tipe Kamar</h3>
+            <h3>Tipe Kios</h3>
 
             <div class="mb-3">
                 <label for="kamar" class="form-label">Ketersedian Kamar</label>
                 <select type="text" class="form-control @error('kamar') is-invalid @enderror" id="kamar"
                     name="kamar" required value="{{ old('kamar') }}">
-                    <option value="Ada Kamar Kosong">Ada Kamar Kosong</option>
-                    <option value="Kamar Penuh">Kamar Penuh</option>
+                    <option value="Ada Kamar Kosong">Ada Kios kosong</option>
+                    <option value="Kamar Penuh">Kios Penuh</option>
                 </select>
                 @error('kamar')
                     <div class="invalid-feedback">
@@ -211,14 +211,14 @@
                 @enderror
             </div>
 
-            <h3>Fasilitas Kamar</h3>
+            <h3>Fasilitas Kios</h3>
 
             <div class="mb-3">
                 <label for="kamarmandi" class="form-label">Kamar Mandi</label>
                 <select type="text" class="form-control @error('kamarmandi') is-invalid @enderror" id="kamarmandi"
                     name="kamarmandi" required value="{{ old('kamarmandi') }} ">
-                    <option value="Kamar Mandi Dalam">Kamar Mandi Dalam</option>
-                    <option value="Kamar Mandi Luar (bersama)">Kamar Mandi Luar (bersama) </option>
+                    <option value="Kamar Mandi Dalam">Ada Kamar Mandi</option>
+                    <option value="Kamar Mandi Luar (bersama)">Tidak ada Kamar Mandi </option>
                 </select>
                 @error('kamarmandi')
                     <div class="invalid-feedback">
@@ -341,7 +341,7 @@
                 @enderror
             </div>
 
-            <h3>Peraturan kos</h3>
+            <h3>Peraturan kios</h3>
 
             <div class="mb-3">
                 <label for="akses" class="form-label">Akses</label>

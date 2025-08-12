@@ -1,6 +1,6 @@
 @extends('dashboard.layouts.main')@section('container')
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Kos Anda</h1>
+    <h1 class="h2">Kios Anda</h1>
 </div>
 
 @if (session()->has('success'))
@@ -11,15 +11,15 @@
 
 <div class="table-responsive col-lg-12">
     @can('admin')
-    <a href="/dashboard/semuakos" class="btn btn-primary">Semua kos</a>
+    <a href="/dashboard/semuakos" class="btn btn-primary">Semua kios</a>
     <hr>
     @endcan
-    <a href="/dashboard/posts/create" class="btn btn-primary">Buat Kos Baru</a>
+    <a href="/dashboard/posts/create" class="btn btn-primary">Buat Kios Baru</a>
     <table class="table table-striped table-sm">
         <thead>
             <tr>
                 <th scope="col">No</th>
-                <th scope="col">Nama Kos</th>
+                <th scope="col">Nama Kios</th>
                 <th scope="col">Kota</th>
                 <th scope="col">Jenis</th>
                 <th scope="col">Action</th>

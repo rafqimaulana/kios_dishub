@@ -11,7 +11,7 @@
                         </a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        <a href="/posts" class="text-decoration-none" style="color: #048853; font-weight: 700;"> Semua Kos
+                        <a href="/posts" class="text-decoration-none" style="color: #048853; font-weight: 700;"> Semua Kios
                         </a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
@@ -187,13 +187,13 @@
                 <div class="row col-12 col-lg-12 col-md-12 pemilik__kos">
                     <div class="col-6 col-lg-6 col-md-6">
                         <h6 class="text-justify">
-                            Kos disewakan oleh
+                            Kios disewakan oleh
                             <a href="/posts?author={{ $post->author->username }}"
                                 class="text-decoration-none">{{ $post->author->name }}
                             </a>
                         </h6>
                         <p>Last update {{ $post->created_at->diffForHumans() }}</p>
-                        <p class="verifikasi"><i class='bx bx-envelope-open'></i> Pemilik kos terverifikasi</p>
+                        <p class="verifikasi"><i class='bx bx-envelope-open'></i> Pemilik kios terverifikasi</p>
                     </div>
                     <div class="col-3 col-lg-3 col-md-3">
                         <img src="/img/avatar.png" alt="">
@@ -203,43 +203,40 @@
                 <hr>
 
                 <div class="col-12 col-lg-12 col-md-12 hadiah__sevenkos">
-                    <h4 class="fw-bold">Yang Kamu dapatkan di SevenKos</h4>
+                    <h4 class="fw-bold">Yang Kamu dapatkan di Kios Dishub</h4>
                     <div class="mb-3 d-flex align-items-lg-center hadiah__sevenkos-1">
                         <div style="margin-top: -15px">
                             <img src="/img/free.png" alt="">
                         </div>
                         <p style="margin-left: 10px; display: inline-block; width: 550px">Bebas biaya admin,
-                            kamu tidak akan dikenakan biaya admin saat melakukan pembayaran di SevenKos.</p>
+                            kamu tidak akan dikenakan biaya admin saat melakukan pembayaran di Kios Dishub.</p>
                     </div>
                     <div class="mb-3 d-flex align-items-lg-center hadiah__sevenkos-2">
                         <div style="margin-top: -15px">
                             <img src="/img/shield.png" alt="">
                         </div>
-                        <p style="margin-left: 10px; display: inline-block; width: 550px">Asuransi anak kos,
-                            kompensasi untuk anak kos jika terjadi kehilangan barang di kosan.</p>
+                        <p style="margin-left: 10px; display: inline-block; width: 550px">Asuransi kios.</p>
                     </div>
                     <div class="mb-3 d-flex align-items-lg-center hadiah__sevenkos-3">
                         <div style="margin-top: -15px">
                             <img src="/img/booking.png" alt="">
                         </div>
-                        <p style="margin-left: 10px; display: inline-block; width: 550px">Booking langsung,
-                            kos ini bisa di-booking dan dibayar di situs dan aplikasi Mamikos, tanpa harus ketemuan dengan
-                            pemilik.
+                        <p style="margin-left: 10px; display: inline-block; width: 550px">Booking langsung.
                         </p>
                     </div>
                     <div class="d-flex align-items-lg-center hadiah__sevenkos-4">
                         <div style="margin-top: -15px">
                             <img src="/img/tamu.png" alt="">
                         </div>
-                        <p style="margin-left: 10px; display: inline-block; width: 550px">Dikelola SevenKos,
-                            kos ini operasionalnya dikelola dan distandardisasi oleh SevenKos.</p>
+                        <p style="margin-left: 10px; display: inline-block; width: 550px">Dikelola Kios Dishub,
+                            kios ini operasionalnya dikelola dan distandardisasi oleh Kios Dishub.</p>
                     </div>
                 </div>
 
                 <hr>
 
                 <div class="col-12 col-lg-12 col-md-12 alamat__kos">
-                    <h4 class="fw-bold mb-3">Alamat Kos</h4>
+                    <h4 class="fw-bold mb-3">Alamat Kios</h4>
                    <p>  Provinsi : <a href="/posts?province={{ $post->province->slug }}" class="text-decoration-none"
                         style="color: #048853;">
                          {{ $post->province->name }}
@@ -270,7 +267,7 @@
                 <hr>
 
                 <div class="col-12 col-lg-12 col-md-12 tipe__kamar">
-                    <h4 class="fw-bold mb-2">Spesifikasi tipe kamar</h4>
+                    <h4 class="fw-bold mb-2">Spesifikasi tipe Kios</h4>
                     <div class="mb-2 d-flex align-items-lg-center tipe__kamar-1">
                         <div style="margin-top: -15px">
                             <img src="/img/bedroom.png" alt="">
@@ -427,7 +424,7 @@
                         <a href="" class="cara_bayar2" data-bs-toggle="modal" data-bs-target="#sewa"><button
                                 class="cara_bayar2 btn"><i class='bx bxl-whatsapp'
                                     style="font-size: 30px; display: inline-flex"></i> Sewa
-                                Kos</button></a>
+                                Kios</button></a>
                     </div>
                 </div>
 
@@ -456,7 +453,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <p>
-                        Cara Sewa Kos
+                        Cara Sewa Kios
                     </p>
                 </div>
 
@@ -469,31 +466,21 @@
                         <div class="container">
                             <div class="row mt-5">
                                 <div class="col-12 col-md-12 col-lg-12 cara__sewa">
-                                    @if ($post->bayar == '-')
-                                    <a href="" onclick="return confirm('Pembayaran Belum Ada Coba untuk Hubungi Pemilik Kos')" class="text-decoration-none">
-                                        <div class="icon__sewa">
-                                            <img src="/img/payment.png" alt="">
-                                        </div>
-                                        <div class="description__sewa">
-                                            <h4>Pembayaran</h4>
-                                        </div>
-                                    </a>
-                                    @else
-                                        <form action="/posts1" method="POST">
+                                        <form action="/posts1" method="POST" enctype="multipart/form-data">
                                             @csrf
                                             <input type="hidden" value="{{ $post->id }}" name="post_id">
                                             <input type="hidden" value="{{ $post->id }} + {{  auth()->user()->id }}" name="slug">
-                                            <input type="hidden" value="sedang diproses" name="status">
+                                            <input type="hidden" value="Sedang diproses" name="status">
                                             <input type="hidden" value="{{ auth()->user()->id }}" name="user_id">
-                                        <div class="icon__sewa">
+                                            {{-- <input type="file" alt=""> --}}
                                             <img src="/img/payment.png" alt="">
+                                        <div class="icon__sewa">
                                         </div>
                                         <div class="description__sewa">
                                         </div>
                                         <button class="btn" type="submit" onclick="return confirm('Lanjut ke pembayaran')" style="border: none"> <h4> Pembayaran</h4> </button>
                                             {{-- Agar Pembayaran lebih Aman Hubungi Pemilik Kos !!!, jika belum tekan cancel --}}
                                         </form>
-                                @endif
 
                                 </div>
                             </div>

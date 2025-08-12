@@ -2,9 +2,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark position-relative">
     <div class="container">
         <a href="/">
-            <img src="/img/logo.jpg" width="55" height="55" class="img-thumbnail rounded-circle me-3">
+            <img src="/img/logo.png" width="55">
         </a>
-        <a class="navbar-brand" href="/">SEVEN INC KOS</a>
+        <a class="navbar-brand" href="/">Kios</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -16,7 +16,7 @@
                         href="/">BERANDA</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link {{ request()->segment(1) == 'posts' ? 'active' : '' }}" href="/posts">KOS</a>
+                    <a class="nav-link {{ request()->segment(1) == 'posts' ? 'active' : '' }}" href="/posts">KIOS</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link {{ request()->segment(1) == 'provinces' ? 'active' : '' }}"
@@ -73,7 +73,7 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Masuk ke Mamikos</h4>
+                <h4 class="modal-title">Masuk ke Kios Dishub</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
 
@@ -94,7 +94,7 @@
                                         <img src="/img/sewa.jpg" alt="">
                                     </div>
                                     <div class="description__sewa">
-                                        <h4>Pencari Kos</h4>
+                                        <h4>Pencari Kios</h4>
                                     </div>
                                 </a>
                             </div>
@@ -113,7 +113,7 @@
                                         <img src="/img/sewa.jpg" alt="">
                                     </div>
                                     <div class="description__sewa">
-                                        <h4>Pemilik Kos</h4>
+                                        <h4>Pemilik Kios</h4>
                                     </div>
                                 </a>
                             </div>
